@@ -1,0 +1,62 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/hackathon-background.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.vh-100{
+    height: 100vh;
+}
+.kaleris-logo {
+  max-width: 150px;
+  margin: 40px auto;
+  display: block;
+}
+.zerodays-logo {
+  max-width: 350px;
+  margin: 10px auto 40px;
+  display: block;
+}
+.separator {
+  max-width: 160px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto 40px;
+}
+p#timer {
+    text-align: center;
+    font-size: 6rem;
+    color: #fff;
+    min-height: 145px;
+    margin: 0;
+}
+.btn-kaleris, .btn-kaleris-secondary{
+    border-radius: 30px;
+    background-color: #00b060;
+    color: #fff;
+    font-size: 15px;
+    min-width: 150px;
+    min-height: 50px;
+}
+.btn-kaleris-secondary{
+    background-color: transparent;
+    border: 1px solid #00b060;
+}
+.btn-kaleris-secondary:hover,
+.btn-kaleris:hover {
+    color:#fff;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    left: 0;
+}
+.footer p{
+    text-transform:uppercase;
+    text-align: center;
+    color: #fff;
+}
