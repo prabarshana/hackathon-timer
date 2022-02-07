@@ -24,6 +24,10 @@ public class EventStatus {
 	private Date timeStamp;
 	
 	
+	@Column
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date stopTime;
+	
 	public Long getId() {
 		return id;
 	}
@@ -41,6 +45,12 @@ public class EventStatus {
 	}
 	public void setTimeStamp(Date timeStamp) {
 		this.timeStamp = timeStamp;
+	}
+	public Date getStopTime() {
+		return stopTime;
+	}
+	public void setStopTime(Date stopTime) {
+		this.stopTime = stopTime;
 	}
 	@Override
 	public String toString() {
