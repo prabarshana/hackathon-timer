@@ -25,11 +25,13 @@ public class EventStatusStatusImpl implements EventStatusService{
 		
 		int days = Integer.parseInt(env.getProperty("kaleris.hackathon.days.add"));
 		int hours = Integer.parseInt(env.getProperty("kaleris.hackathon.hours.add"));
+		int minutes = Integer.parseInt(env.getProperty("kaleris.hackathon.hours.minutes"));
 		
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(status.getTimeStamp());
 		cal.add(Calendar.DAY_OF_MONTH, days);
 		cal.add(Calendar.HOUR, hours);
+		cal.add(Calendar.MINUTE, minutes);
 		status.setStopTime(cal.getTime());
 		
 		if (dao.findAll() == null || dao.findAll().size() == 0) {
